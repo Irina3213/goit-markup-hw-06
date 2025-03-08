@@ -36,7 +36,7 @@ li {
 .header-address {
   font-style: normal;
 }
-.address-link a {
+.address-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -44,10 +44,10 @@ li {
   color: #434455;
   font-family: 'Roboto', sans-serif;
 }
-.address-link a:hover {
+.address-link:hover {
   color: #404bbf;
 }
-.address-link a:focus {
+.address-link:focus {
   color: #404bbf;
 }
 
