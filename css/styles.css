@@ -36,7 +36,7 @@ li {
 .header-address {
   font-style: normal;
 }
-.address-link {
+.address-link a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -44,10 +44,10 @@ li {
   color: #434455;
   font-family: 'Roboto', sans-serif;
 }
-.address-link:hover {
+.address-link a:hover {
   color: #404bbf;
 }
-.address-link:focus {
+.address-link a:focus {
   color: #404bbf;
 }
 
@@ -73,10 +73,10 @@ li {
   cursor: pointer;
 }
 .hero-btn:hover {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 .hero-btn:focus {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 
 /* WORK */
