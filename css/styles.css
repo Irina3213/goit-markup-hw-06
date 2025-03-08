@@ -1,42 +1,31 @@
 body {
-  color: #434455;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  color: #434455;
   background-color: #fff;
 }
-.container {
-  max-width: 1128px;
-  padding: 0 15px;
-  margin: 0 auto;
+a {
+  text-decoration: none;
 }
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-.subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+li {
+  list-style-type: none;
 }
 .logo {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  font-family: 'Raleway', sans-serif;
 }
 .logo-span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #2e2f42;
+  font-family: 'Raleway', sans-serif;
 }
 .header-link {
   font-weight: 500;
@@ -44,35 +33,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  font-family: 'Roboto', sans-serif;
 }
-.header-item {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.header-link:hover,
+.header-link:focus {
   color: #2e2f42;
-}
-.header-item:hover,
-.header-item:focus {
-  color: #404bbf;
-}
-.header-address {
-  font-style: normal;
-}
-.address-mail,
-.address-tel {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-.address-mail:hover,
-.address-mail:focus {
-  color: #404bbf;
-}
-.address-tel:hover,
-.address-tel:focus {
-  color: #404bbf;
 }
 .address-link {
   font-weight: 400;
@@ -80,6 +45,28 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  font-family: 'Roboto', sans-serif;
+}
+.address-link:hover,
+.address-link:focus {
+  color: #434455;
+}
+
+.address-mail {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-family: 'Roboto', sans-serif;
+}
+.address-tel {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-family: 'Roboto', sans-serif;
 }
 .hero {
   background-color: #2e2f42;
@@ -87,22 +74,22 @@ body {
 .hero-title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 .hero-btn {
-  color: #ffffff;
-  background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4d5ae5;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  color: red;
 }
 .work-subtitle {
   font-weight: 500;
@@ -112,42 +99,77 @@ body {
   color: #2e2f42;
 }
 .work-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
-.team {
-  background-color: #f4f4fd;
-  cursor: pointer;
-}
-.team-title,
-.portfolio-title {
+.team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  text-transform: capitalize;
 }
-footer {
-  background-color: #2e2f42;
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.footer {
 }
 .footer-logo {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
 }
 .footer-span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #f4f4fd;
 }
 .footer-text {
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
-  color: #f4f4fd;
   letter-spacing: 0.02em;
+  color: #f4f4fd;
 }
