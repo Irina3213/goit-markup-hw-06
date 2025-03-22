@@ -42,8 +42,10 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
   align-items: center;
+}
+.header-menu {
+  padding: 24px 0;
 }
 .logo {
   font-weight: 700;
