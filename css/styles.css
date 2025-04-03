@@ -430,12 +430,13 @@ button {
 }
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 .footer-right {
   margin-right: 120px;
 }
 
-.footer-title-link {
+.footer-text-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -445,10 +446,9 @@ button {
 }
 .footer-icon-list {
   display: flex;
+  gap: 16px;
 }
-.footer-icon-item {
-  margin-right: 16px;
-}
+
 .footer-icon-item:last-child {
   margin-right: 0;
 }
@@ -465,5 +465,5 @@ button {
 }
 .footer-icon-link:hover,
 .footer-icon-link:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
