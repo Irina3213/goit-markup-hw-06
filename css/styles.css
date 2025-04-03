@@ -223,7 +223,7 @@ button {
 .work-item:last-child {
   margin-right: 0;
 }
-/* .work-item-icon-wrapper {
+.work-item-icon-wrapper {
   display: flex;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -233,7 +233,7 @@ button {
   justify-content: center;
   align-items: center;
   margin-bottom: 8px;
-} */
+}
 
 /* TEAM */
 .team {
