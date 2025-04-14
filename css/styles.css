@@ -25,10 +25,14 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  width: 320px;
+  /* max-width: 1158px; */
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 button {
@@ -195,42 +199,34 @@ button {
 
 /* WORK */
 .work {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .work-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
 }
 .work-text {
-  font-weight: 400;
+  font-weight: 500;
+  color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 .work-list {
   display: flex;
-  gap: 24px;
-}
-.work-item {
-  width: calc((100% - 72px) / 4);
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .work-item:last-child {
   margin-right: 0;
 }
 .work-item-icon-wrapper {
-  display: flex;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  background-color: #f4f4fd;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8px;
+  display: none;
 }
 
 /* TEAM */
@@ -797,4 +793,63 @@ button {
   text-align: center;
   color: #fff;
   border: transparent;
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+  .work-list {
+    gap: 72px 24px;
+  }
+  .work-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .work-subtitle {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+  .work {
+    padding: 120px 0;
+  }
+  .work-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .work-text {
+    font-weight: 400;
+  }
+  .work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .work-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .work-item:last-child {
+    margin-right: 0;
+  }
+  .work-item-icon-wrapper {
+    display: flex;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
 }
