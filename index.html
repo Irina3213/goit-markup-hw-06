@@ -20,7 +20,7 @@
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="header-menu">
           <a class="logo" href="./index.html"
@@ -83,12 +83,14 @@
           <address>
             <ul class="mob-address-list">
               <li class="mob-address-link">
-                <a class="info" href="mailto:info@devstudio.com"
+                <a class="info-link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="mob-address-link">
-                <a class="info" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                <a class="info-link mob-info" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
               </li>
             </ul>
           </address>
@@ -125,6 +127,50 @@
             </ul>
           </div>
         </div>
+      </div>
+    </header> -->
+
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="header-logo" href="./index.html"
+            >Web<span class="logo-studio-black">Studio</span></a
+          >
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a class="header-menu-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="">Contacts</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-adress">
+          <ul class="header-adress-list">
+            <li class="header-adress-item">
+              <a class="header-contact" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-adress-item">
+              <a class="header-contact" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button
+          class="header-menu-button"
+          type="button"
+          aria-label="Close menu button"
+        >
+          <svg class="header-menu-button-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -718,139 +764,172 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop" data-modal>
+
+    <!-- Backdrop -->
+
+    <div class="backdrop">
       <div class="modal">
-        <button class="modal-close-btn" type="button" data-modal-close>
-          <svg class="modal-icon" width="8" height="8">
+        <button
+          class="modal-button-close"
+          type="button"
+          aria-label="modal close-button"
+        >
+          <svg class="modal-button-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <form name="modal-form">
-          <div class="modal-field">
-            <label class="modal-label" for="user-name"> Name</label>
-            <div class="modal-field-wrap">
+
+        <form class="moodal-form" name="form_contacts">
+          <div class="modal-form-contacts">
+            <label class="modal-form-label" for="user-name"> Name </label>
+            <div class="label-field">
               <input
-                type="text"
-                class="form-input"
-                name="user-name"
+                class="label-input"
                 id="user-name"
+                type="text"
+                name="user-name"
               />
-              <svg class="modal-field-icon" width="18" height="24">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label class="modal-label" for="tel">Phone</label>
-            <div class="modal-field-wrap">
-              <input type="tel" class="form-input" name="tel" id="tel" />
-              <svg class="modal-field-icon" width="18" height="24">
+
+          <div class="modal-form-contacts">
+            <label class="modal-form-label" for="user-phone"> Phone </label>
+            <div class="label-field">
+              <input
+                class="label-input"
+                id="user-phone"
+                type="tel"
+                name="user-phone"
+              />
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label class="modal-label" for="e-mail">Email</label>
-            <div class="modal-field-wrap">
-              <input type="email" class="form-input" name="email" id="e-mail" />
-              <svg class="modal-field-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-list"></use>
+
+          <div class="modal-form-contacts">
+            <label class="modal-form-label" for="user-email"> Email </label>
+            <div class="label-field">
+              <input
+                class="label-input"
+                id="user-email"
+                type="email"
+                name="user-email"
+              />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-field modal-field-margin">
-            <label class="modal-label" for="user-comment">Comment </label>
+
+          <div class="modal-comment">
+            <label class="modal-form-label" for="user-comment"> Comment </label>
             <textarea
-              class="form-input textarea-input"
-              name="user-comment"
+              class="label-comment"
               id="user-comment"
+              name="user-comment"
               placeholder="Text input"
+              rows="4"
             ></textarea>
           </div>
-          <div class="modal-field modal-field-checkbox">
+
+          <div class="modal-checkbox">
             <input
+              class="checkbox-input visually-hidden"
+              id="user-privacy"
               type="checkbox"
               name="user-privacy"
-              id="user-privacy"
               value="true"
-              class="modal-check visually-hidden"
             />
-
-            <label class="modal-label" for="user-privacy"
-              ><span class="fake-check">
-                <svg class="modal-check-icon" width="10" height="8">
+            <label class="modal-form-checkbox" for="user-privacy">
+              <span class="check-box">
+                <svg class="check-box-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="privacy">Privacy Policy </a>
+              <span class="privacy-wrapper">
+                I accept the terms and conditions of the
+                <a class="privacy-policy-link" href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
-          <button class="button modal-btn" type="submit">Send</button>
+          <button class="modal-form-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
-    <!-- <div class="backdrop">
-      
-      
-      
-      
-      <div class="modal">
-        <button type="button" class="modal-close-btn">
-          <svg class="modal-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="modal-form">
-          <div class="modal-field">
-            <label for="user-name" class="modal-label">
-              Name
-              <input
-                type="text"
-                class="modal-input"
-                name="user-name"
-                id="user-name"
-              />
-              <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </label>
-          </div>
+    </div>
 
-          <div class="modal-field">
-            <label for="modal-input" class="modal-label">
-              Phone
-              <input
-                type="tel"
-                class="modal-input"
-                name="user-tel"
-                required
-                id="modal-input"
-              />
-              <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="modal-field">
-            <label for="modal-input" class="modal-label">
-              Email
-              <input
-                type="email"
-                class="modal-input"
-                name="user-email"
-                required
-                id="modal-input"
-              />
-              <svg class="modal-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-list"></use>
-              </svg>
-            </label>
-          </div>
-        </form>
-      </div>
-    </div> -->
+    <!-- Mobile menu -->
+
+    <div class="menu">
+      <button
+        class="menu-button-close"
+        type="button"
+        aria-label="menu close-button"
+      >
+        <svg class="menu-button-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-list">
+        <li class="menu-list-item">
+          <a class="menu-list-link" href="./index.html">Studio</a>
+        </li>
+        <li class="menu-list-item">
+          <a class="menu-list-link" href="">Contacts</a>
+        </li>
+        <li class="menu-list-item">
+          <a class="menu-list-link" href="">Portfolio</a>
+        </li>
+      </ul>
+      <address class="menu-adress">
+        <ul class="menu-adress-list">
+          <li class="menu-adress-item">
+            <a class="menu-contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="menu-adress-item">
+            <a class="menu-contact" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="menu-socials-list">
+        <li class="menu-socials-item">
+          <a href="" class="menu-socials-link">
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-socials-item">
+          <a href="" class="menu-socials-link">
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-socials-item">
+          <a href="" class="menu-socials-link">
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-socials-item">
+          <a href="" class="menu-socials-link">
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
